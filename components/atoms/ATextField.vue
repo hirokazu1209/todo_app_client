@@ -1,4 +1,3 @@
-//TODO：テキストフィールドをindexで活用する
 <template>
   <div>
     <input
