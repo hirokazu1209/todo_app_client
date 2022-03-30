@@ -2,6 +2,7 @@
   <section class="container">
     <h1>Todoリスト</h1>
     <div class="addArea">
+      <ATextField></ATextField>
       <input type="text" name="addName" id ="addName" placeholder="タスクを入力してください">
       <button id="addButton" class="button button--green">追加</button>
     </div>
@@ -33,6 +34,7 @@
 </template>
 
 <script>
+import ATextField from './components/ATextField.vue'
 export default {
   name: 'IndexPage',
 }
