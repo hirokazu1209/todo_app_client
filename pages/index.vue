@@ -3,6 +3,11 @@
     <h1>Todoリスト</h1>
     <div class="addArea">
       <input type="text" name="addName" id ="addName" placeholder="タスクを入力してください">
+      <ATextField
+        :type=inputType
+        :placeholder=placeholderContents
+        :v-model="value"
+        />
       <button id="addButton" class="button button--green">追加</button>
     </div>
     <div class="Filter">
@@ -32,11 +37,17 @@
   </section>
 </template>
 
-<script>
-// import { ATextField } from './components/ATextField.vue'
-export default {
-  name: 'IndexPage',
-}
+<script lang="ts">
+import { defineComponent, ref } from "@nuxtjs/composition-api";
+
+export default defineComponent({
+  setup() {
+    const value = ref("");
+    return {
+      value
+    }
+  }
+})
 </script>
 <style>
 
