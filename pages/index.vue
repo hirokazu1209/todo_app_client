@@ -1,3 +1,4 @@
+<!--コメントアウト
 <template>
   <section class="container">
     <h1>Todoリスト</h1>
@@ -35,6 +36,19 @@
       </tbody>
     </table>
   </section>
+</template>
+-->
+
+<template>
+  <div class="container">
+    <h1>Todoリスト</h1>
+    <form>
+      <div class="form-group">
+        <label>新規リスト</label>
+        <input type="text" class="#" placeholder="入力してください" v-model=>
+      </div>
+    </form>
+  </div>
 </template>
 
 <script lang="ts">
