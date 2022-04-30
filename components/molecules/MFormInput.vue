@@ -16,7 +16,7 @@ export default defineComponent({
       type: String,
       default: '',
     },
-    placeholderComtents: {
+    placeholderContents: {
       type: String,
       default: '',
     },

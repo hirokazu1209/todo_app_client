@@ -45,8 +45,9 @@
     <form>
       <div class="form-group">
         <label>新規リスト</label>
-        <input type="text" class="#" placeholder="入力してください" v-model=>
+        <input type="text" class="#" placeholder="入力してください" v-model="form.body" />
       </div>
+      <button type="submit" class="btn btn-primary" @click.prevent="submit">送信</button>
     </form>
   </div>
 </template>
@@ -54,14 +55,27 @@
 <script lang="ts">
 import { defineComponent, ref } from "@nuxtjs/composition-api";
 
-export default defineComponent({
-  setup() {
-    const value = ref("");
+// export default defineComponent({
+export default {
+  data() {
     return {
-      value
+      form: {
+        body: ""
+      }
+    }
+  },
+  methods: {
+    submit() {
+      console.log(this.form)
     }
   }
-})
+  // setup() {
+  //   const value = ref("");
+  //   return {
+  //     value
+  //   }
+  // }
+}
 </script>
 <style>
 
