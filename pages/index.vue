@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <h1>Todoリスト</h1>
-    <v-container>
+    <v-container class="grey lighten-5">
       <v-row
         v-for="j in justify"
         :key="j"
@@ -12,13 +12,10 @@
           :key="k"
           md="4"
         >
-
-          <v-card
-            class="pa-2"
-            outlined
-            tile
-          >
-          </v-card>
+          <v-select
+            :items="items"
+            label="テスト"
+          ></v-select>
         </v-col>
       </v-row>
     </v-container>
@@ -31,15 +28,23 @@ import { defineComponent, ref } from "@nuxtjs/composition-api";
 
 // export default defineComponent({
 export default {
-  data: () => ({
-    justify: [
-      'start',
-      'center',
-      'end',
-      'space-around',
-      'space-between',
-    ],
-  }),
+  data() {
+    return {
+      justify: [
+        'start',
+        'center',
+        'end',
+        'space-around',
+        'space-between',
+      ],
+      items: [
+        'Foo',
+        'Bar',
+        'Fizz',
+        'Buzz'
+      ],
+    }
+  }
   // methods: {
   //   submit(): void {
   //     console.log(this.form)
