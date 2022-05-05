@@ -1,7 +1,8 @@
 <template>
   <div class="container">
     <h1>Todoリスト</h1>
-    <MTextField>テスト</MTextField>
+    <MTextField></MTextField>
+    <MTextField></MTextField>
     <v-container class="grey lighten-5">
       <v-row
         v-for="j in justify"
@@ -31,6 +32,9 @@ import MTextField from '../components/molecules/MTextField.vue';
 
 // export default defineComponent({
 export default {
+  components: {
+    MTextField
+  },
   data() {
     return {
       justify: [
