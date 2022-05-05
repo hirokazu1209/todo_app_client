@@ -1,5 +1,5 @@
-import MFormInput from "./MFormInput.vue"
+import MTextField from "./MTextField.vue"
 
-export default {
-  MFormInput
+export default{
+  MTextField
 }

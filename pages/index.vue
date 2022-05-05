@@ -1,6 +1,7 @@
 <template>
   <div class="container">
     <h1>Todoリスト</h1>
+    <MTextField>テスト</MTextField>
     <v-container class="grey lighten-5">
       <v-row
         v-for="j in justify"
@@ -25,6 +26,8 @@
 
 <script lang="ts">
 import { defineComponent, ref } from "@nuxtjs/composition-api";
+import MTextField from '../components/molecules/MTextField.vue';
+
 
 // export default defineComponent({
 export default {
