@@ -1,26 +1,12 @@
 <template>
   <v-form>
-    <v-container>
-      <v-row
-        v-for="j in justify"
-        :key="j"
-        :justify="j"
-        >
-        <v-col
-          v-for="k in 2"
-          :key="k"
-          md="4"
-        >
-          <v-text-field
-            v-model="title"
-            :rules="rules"
-            counter="25"
-            hint="文字数"
-            label="姓名"
-          ></v-text-field>
-        </v-col>
-      </v-row>
-    </v-container>
+    <v-text-field
+      v-model="title"
+      :rules="rules"
+      counter="25"
+      hint="文字数"
+      label="姓名"
+    ></v-text-field>
   </v-form>
 </template>
 
@@ -36,14 +22,9 @@ export default defineComponent({
   // },
   data() {
     return {
-      justify: [
-        'start',
-      ],
+      title: '',
+      rules: [v => v.length <= 25 || '25文字までとなります'],
     }
-    // return {
-    //   title: 'Preliminary report',
-    //   rules: [v => v.length <= 25 || '25文字までとなります'],
-    // }
   },
   // setup() {
 
