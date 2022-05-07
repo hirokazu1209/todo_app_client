@@ -14,21 +14,12 @@
 import { defineComponent } from '@vue/composition-api'
 
 export default defineComponent({
-  // props : {
-  //   type: {
-  //     type: String,
-  //     default: '',
-  //   }
-  // },
   data() {
     return {
       title: '',
       rules: [v => v.length <= 25 || '25文字までとなります'],
     }
   },
-  // setup() {
-
-  // },
 })
 </script>
 

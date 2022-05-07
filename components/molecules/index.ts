@@ -1,5 +1,7 @@
-import MTextField from "~/components/molecules/MTextField.vue"
+import MTextField from "./MTextField.vue"
+import MSelectForm from "./MSelectForm.vue"
 
 export default{
-  MTextField
+  MTextField,
+  MSelectForm
 }
