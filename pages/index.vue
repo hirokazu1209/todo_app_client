@@ -9,16 +9,24 @@
       />
       <v-row>
         <v-col cols="6">
-          <MTextField></MTextField>
+          <MTextField
+            label="応募者氏名"
+            />
         </v-col>
         <v-col cols="6">
-          <MTextField></MTextField>
+          <MTextField
+            label="応募者年齢"
+            />
         </v-col>
         <v-col cols="6">
-          <MTextField></MTextField>
+          <MTextField
+            label="応募者電話番号"
+            />
         </v-col>
         <v-col cols="6">
-          <MTextField></MTextField>
+          <MTextField
+            label="応募者メールアドレス"
+            />
         </v-col>
       </v-row>
       <MTitle
@@ -26,13 +34,19 @@
       />
       <v-row>
         <v-col cols="6">
-          <MSelectForm></MSelectForm>
+          <MSelectForm
+            label="応募者経路"
+            />
         </v-col>
         <v-col cols="6">
-          <MTextField></MTextField>
+          <MTextField
+            label="応募者経路URL"
+            />
         </v-col>
         <v-col cols="6">
-          <MTextField></MTextField>
+          <MTextField
+            label="応募日"
+            />
         </v-col>
       </v-row>
       <MTitle
@@ -40,16 +54,24 @@
       />
       <v-row>
         <v-col cols="6">
-          <MSelectForm></MSelectForm>
+          <MSelectForm
+            label="担当者"
+            />
         </v-col>
         <v-col cols="6">
-          <MSelectForm></MSelectForm>
+          <MSelectForm
+            label="採用フェーズ"
+            />
         </v-col>
         <v-col cols="6">
-          <MSelectForm></MSelectForm>
+          <MSelectForm
+            label="採用職種"
+            />
         </v-col>
         <v-col cols="6">
-          <MSelectForm></MSelectForm>
+          <MSelectForm
+            label="勤務地"
+            />
         </v-col>
       </v-row>
       <MTitle
@@ -57,10 +79,14 @@
       />
       <v-row>
         <v-col cols="6">
-          <MSelectForm></MSelectForm>
+          <MSelectForm
+            label="不採用理由"
+            />
         </v-col>
         <v-col cols="6">
-          <MSelectForm></MSelectForm>
+          <MSelectForm
+            label="辞退理由"
+            />
         </v-col>
       </v-row>
       <MTitle
@@ -68,7 +94,7 @@
       />
       <v-row>
         <v-col cols="6">
-          <MSelectForm></MSelectForm>
+          <MSelectForm />
         </v-col>
       </v-row>
       <MTitle
@@ -103,8 +129,6 @@ export default defineComponent({
     const reason = ref<string>('終了理由');
     const fileData = ref<string>('応募者ファイルデータ');
     const comment = ref<string>('コメント');
-
-
 
     return {
       mainTitle,

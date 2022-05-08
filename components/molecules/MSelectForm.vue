@@ -1,7 +1,7 @@
 <template>
   <v-select
     :items="items"
-    label="テスト"
+    :label="label"
   ></v-select>
 </template>
 
@@ -9,11 +9,15 @@
 import { defineComponent } from '@vue/composition-api'
 
 export default defineComponent({
-  data: () => ({
-      items: ['Foo', 'Bar', 'Fizz', 'Buzz'],
-  }),
+  props: {
+    items: {
+      type: String
+    },
+    label: {
+      type: String
+    }
+  }
 })
 </script>
 <style>
 </style>
-
