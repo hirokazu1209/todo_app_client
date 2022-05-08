@@ -36,6 +36,7 @@
         <v-col cols="6">
           <MSelectForm
             label="応募者経路"
+            :items="applicantPathway"
             />
         </v-col>
         <v-col cols="6">
@@ -117,10 +118,7 @@ export default defineComponent({
     MSelectForm,
     MTitle
   },
-  // methods: {
-  //   submit(): void {
-  //     console.log(this.form)
-  //   }
+
   setup(){
     const mainTitle = ref<string>('新規応募者登録');
     const applicantInformation = ref<string>('応募者情報');
@@ -129,6 +127,7 @@ export default defineComponent({
     const reason = ref<string>('終了理由');
     const fileData = ref<string>('応募者ファイルデータ');
     const comment = ref<string>('コメント');
+    const applicantPathway = ref<Array<string>>(['Foo', 'Bar', 'Fizz', 'Buzz'])
 
     return {
       mainTitle,
@@ -137,7 +136,8 @@ export default defineComponent({
       recruitmentInformation,
       reason,
       fileData,
-      comment
+      comment,
+      applicantPathway
     }
   }
 });

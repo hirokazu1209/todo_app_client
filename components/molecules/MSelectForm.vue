@@ -11,7 +11,8 @@ import { defineComponent } from '@vue/composition-api'
 export default defineComponent({
   props: {
     items: {
-      type: String
+      type: String,
+      default: []
     },
     label: {
       type: String
