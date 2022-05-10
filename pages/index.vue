@@ -11,6 +11,8 @@
         <v-col cols="6">
           <MTextField
             label="応募者氏名"
+            v-model="select"
+            :items="items"
             />
         </v-col>
         <v-col cols="6">
@@ -57,6 +59,7 @@
         <v-col cols="6">
           <MSelectForm
             label="担当者"
+            :items="applicantPathway"
             />
         </v-col>
         <v-col cols="6">
